@@ -1,0 +1,37 @@
+{
+    "name": "ehsan2e/mongo-stream",
+    "description": "A PHP implementation of Mongo DB wire protocol using non-blocking streams",
+    "keywords": ["database", "driver", "mongodb", "swoole"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ehsan Enami",
+            "email": "ehsan2e@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Ehsan2e\\MongoStream\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ehsan2e\\MongoStreamTest\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^7.2",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9",
+        "squizlabs/php_codesniffer": "3.*"
+    },
+    "scripts": {
+        "phpcbf": "./vendor/bin/phpcbf",
+        "phpcs": "./vendor/bin/phpcs",
+        "test": "./vendor/bin/phpunit --testdox tests"
+    }
+}
